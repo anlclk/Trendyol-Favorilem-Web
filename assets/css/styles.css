@@ -1,0 +1,566 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+}
+ul li {
+    list-style: none;
+}
+.header {
+    width: 1200px;
+    margin: 0 auto;
+}
+.wrapper {
+    height: 25px;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 20px;
+}
+.wrapperlinks {
+    display: flex;
+    opacity: 0.6;
+    font-size: 12px;
+    gap: 12px;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logo img {
+    width: 140px;
+}
+.logo:hover {
+    cursor: pointer;
+}
+.headermain {
+    display: flex;
+    height: 95px;
+    justify-content: space-between;
+}
+.myaccountfavoritesshopping {
+    display: flex;
+    align-items: center;
+    width: 300px;
+    margin-right: 35px;
+}
+.headeright {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 13px;
+}
+.myaccount {
+    display: flex;
+    align-items: center;
+}
+.myaccount:hover{
+    cursor: pointer;
+    color: orangered;
+}
+.usericon {
+    
+    margin-right: 5px;
+}
+.myfavorites {
+    display: flex;
+    align-items: center;
+}
+.myfavorites:hover {
+    cursor: pointer;
+    color: orangered;
+}
+.favoritesicon {
+    margin-right: 5px;
+}
+.shopping {
+    display: flex;
+    align-items: center;
+}
+.shopping:hover {
+    cursor: pointer;
+    color: orangered;
+}
+.shoppingicon {
+    margin-right: 5px;
+}
+nav {
+    width: 100%;
+    height: 30%;
+}
+.navmain {
+    width: 1200px;
+    display: flex;      
+    justify-content: space-between;
+    align-items: center;
+}
+.navmain li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    color: #333;
+    border-bottom: 2px solid #fff; 
+    list-style: none;
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 0.18px; 
+} 
+.navmain li:hover {
+    border-bottom: 2px solid #f27a1a;
+    cursor: pointer;
+    & a {
+        color: #f27a1a;
+    }
+}
+.navmain a{
+    color: #333;
+    list-style: none;
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 0.18px; 
+}
+.wrapperlists a {
+    color: black;
+}
+.searchbox {
+    background-color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 650px;
+    height: 100%;
+    background-color:#fff;
+    border: none;
+    
+}
+.searchbar {
+    background-color:  rgb(238, 236, 236);
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    position: relative;
+}
+.searchtxt {
+    width: 640px;
+    height: 95%;
+    border-radius: 6px;
+    border: none;
+    position: relative;
+    background-color: rgb(238, 236, 236);
+    outline: none;
+    
+}
+.searchbtn {
+    position: absolute;
+    height: 30px;
+    width: 36px;
+    right: 10px;
+    border: none;
+    background-color:rgb(238, 236, 236);
+    border-radius: 6px;
+    cursor: pointer;   
+}
+.shortcut {
+    border: solid 1px rgba(0,0,0,0.08);
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.shortcut-favorites {
+    width: 1200px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+}
+.shortcutleft {
+    width: 25%;
+    height: 100%;
+    display: flex;
+}
+.favandicon {
+    border-bottom: 4px solid #f27a1a;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+}
+.favandicon a{
+    text-decoration: none;
+}
+.fav {
+    margin-right: 10px;
+}
+.favorite a{
+    font-size: 18px;
+    color: black;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+}
+.collectionandicon {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+}
+.bookmarkicon {
+    margin-right: 10px;
+}
+.mycollections a{
+    font-size: 18px;
+    color: black;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+}
+.shortcutright {
+    /* border: solid skyblue; */
+    height: 100%;
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.myfavsearch {
+    /* border: solid; */
+    width: 100%;
+    height: 67%;
+    padding-left: 6px;
+    padding: 3px;
+    border-radius: 6px;
+    background-color: rgb(238, 236, 236);
+    position: relative;
+}
+.myfavsearchtxt {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background-color: rgb(238, 236, 236);
+    padding-left: 50px;
+    position: relative;
+}
+.myfavsearchbttn {
+    position: absolute;
+    background-color:rgb(238, 236, 236);
+    border-radius: 6px;
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    left: 0;
+    border: none;
+}
+.main {
+    width: 1200px;
+    margin: auto;
+    height: 20%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    gap: 1rem;
+    padding-top: 20px;
+}
+.cards {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;  
+}
+.imgandcard {
+    border: solid 1px #eaeaea;
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+}
+.cardimg img{
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+.productInfo {
+    padding: 0 4px 0 4px;
+}
+.productInfo p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    font-size: 14px; 
+    & span {
+        font-weight: bold;
+    }
+}
+.stars {
+    display: flex;
+    align-items: center;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+.stars i{
+    padding-left: 5px;  
+}
+.price {
+    font-weight: bold;
+    font-size: 18px;
+    color: #f27a1a;
+    padding: 0 10px 30px 0;  
+}
+.sizeandbuy {
+    /* border: solid; */
+    height: 45px;
+    display: flex;
+    align-items: center;
+    padding: 3px 10px 3px 10px;
+    justify-content: space-between;
+} 
+.dropdownselect {
+    border: 1px solid #e6e6e6;
+    height: 85%;
+    width: 41%;
+    border-radius: 3px;  
+    cursor: pointer;
+}
+.buy {
+    border: 1px solid #f27a1a;
+    border-radius: 3px;
+    font-size: 14px;
+    height: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 55%;
+    color: #f27a1a;
+    border-radius: 3px;
+}
+.buy:hover {
+    cursor: pointer;
+}
+.popularBrands-popularPages {
+    border-top: 1px solid #d4d4d4;
+    width: 100%;
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 35px 0 35px 0;
+}
+.popularBrands {
+    width: 525px;
+    height: 100%;
+}
+.popularBrandsHead {
+    height: 13%;
+    display: flex;
+    padding-bottom: 10px;
+    font-size: 22px;
+    color: #333;
+}
+.brands {
+    height: 400px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.brands li {
+    font-size: 13px;
+    margin: 4px 0 4px 0;
+    & a {
+        color: #333;
+    }
+}
+.brands a:hover {
+    text-decoration: underline;
+}
+.popularPages {
+    width: 525px;
+    height: 100%;
+}
+.popularPagesHead {
+    height: 13%;
+    display: flex;
+    padding-bottom: 10px;
+    font-size: 22px;
+    color: #333;
+}
+.pages {
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.pages li {
+    font-size: 13px;
+    margin: 4px 0 4px 0;
+    color: #333;
+}
+.pages a {
+    color: #333;
+}
+.pages a:hover {
+    text-decoration: underline;
+}
+.footer {
+    background-color: rgb(2, 1, 1);
+    height: 500px;
+    width: 1080px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    margin: auto;
+}
+.AboutUs {
+    /* border: solid yellow; */
+    /* width: 15%;
+    height: 350px; */
+    height: 90%;
+    width: 25%;
+    padding-left: 10px;
+}
+.FooterHead {
+    margin-bottom: 10px;
+    
+}
+.FooterList li{
+    margin-top: 15px;
+    
+}
+.FooterList a {
+    font-size: 13px;
+    color: #fff;
+}
+.FooterHead a{
+    font-size: 22px;
+    color: #fff;
+}
+.FooterHead p {
+    margin-top: 10px;
+}
+
+.AboutUsPayment {
+    /* border: solid green; */
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    /* height: 90px; */
+    
+}
+.Troyimg {
+    margin-right: 7px;
+    
+}
+.MasterCardİmg {
+    margin-right: 7px;
+    background-size: contain;
+}
+.Visaİmg {
+    margin-right: 7px;
+
+} 
+.AboutUsEn {
+    /* border: solid yellow; */
+    height: 90%;
+    width: 25%;
+    padding-left: 40px;
+}
+.MobileApplication {
+    border: solid   ;
+    margin-top: 20px;
+}
+.AppStore {
+    width: 50%;
+    margin-bottom: 3px;
+}
+.GooglePlay {
+    width: 50%;
+    margin-bottom: 3px;
+}
+.AppGallery {
+    width: 50%;
+}
+.Campaigns-SocialMedia {
+    /* border: solid yellow; */
+    height: 90%;
+    width: 25%;
+}
+.SocialMedia {
+    border: solid;
+    height: 50px;
+    margin-top: 20px;
+}
+.Facebookİcon {
+    display: inline-block;
+    height: 33px;
+    width: 33px;
+    background: url("https://cdn.dsmcdn.com/web/production/facebookV2.svg");
+    margin: 5px 3px 5px 0;
+}
+.Facebookİcon:hover {
+    background-color: blue;
+    color: blue;
+}
+.İnstagramİcon {
+    display: inline-block;
+    height: 33px;
+    width: 33px;
+    background: url("https://cdn.dsmcdn.com/web/production/instagramV2.svg");
+    margin: 5px 3px 5px 0;
+}
+.Twitterİcon {
+    display: inline-block;
+    height: 33px;
+    width: 33px;
+    background: url("https://cdn.dsmcdn.com/web/production/twitterV2.svg");
+    margin: 5px 3px 5px 0;
+}
+.Youtubeİcon {
+    display: inline-block;
+    height: 33px;
+    width: 33px;
+    background: url("https://cdn.dsmcdn.com/web/production/youtubeV2.svg");
+    margin: 5px 3px 5px 0;
+}
+.Help {
+    height: 90%;
+    width: 25%;
+}
+.ChangeCountry {
+    border: solid 1px #fff;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #fff;
+}
+.ChangeCountry:hover {
+    cursor: pointer;
+}
+.Etbis-Stamp {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.Stamp {
+    margin-left: 30px;
+}
