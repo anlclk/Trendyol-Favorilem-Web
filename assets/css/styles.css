@@ -17,6 +17,9 @@ a {
 ul li {
     list-style: none;
 }
+.container {
+    width: 1200px;
+}
 .header {
     width: 1200px;
     margin: 0 auto;
@@ -353,17 +356,13 @@ nav {
 .buy:hover {
     cursor: pointer;
 }
-.popularBrands-popularPages {
-    border-top: 1px solid #d4d4d4;
-    width: 100%;
-    margin-top: 35px;
+.container {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 35px 0 35px 0;
+    margin: 30px auto;
+
 }
 .popularBrands {
-    width: 525px;
+    width: 50%;
     height: 100%;
 }
 .popularBrandsHead {
@@ -391,7 +390,7 @@ nav {
     text-decoration: underline;
 }
 .popularPages {
-    width: 525px;
+    width: 50%;
     height: 100%;
 }
 .popularPagesHead {
@@ -418,14 +417,17 @@ nav {
 .pages a:hover {
     text-decoration: underline;
 }
+hr {
+    margin: 40px 0 40px 0;
+}
 .footer {
+    border-top: 1px solid #d4d4d4;
+    border-bottom: 1px solid #d4d4d4;
     background-color: rgb(2, 1, 1);
     height: 500px;
-    width: 1080px;
+    width: 100%;
     display: flex;
-    /* justify-content: center; */
     align-items: center;
-    margin: auto;
 }
 .AboutUs {
     /* border: solid yellow; */
